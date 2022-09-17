@@ -1,4 +1,4 @@
 import math
-P,T,R = map(int,input().split())
-SI = math.trunc((P*T*R)/100)
-print((SI))
+P,T,R  = map(int,input().split())
+si = math.trunc((P*R*T)/100)
+print(si)
