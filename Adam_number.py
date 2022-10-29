@@ -1,17 +1,16 @@
-def rev(N):
+def reverse(n):
     rev = 0
-    while N >0:
-        digit = N%10
-        rev = rev*10+digit
-        N = N//10
+    while n>0:
+        r = n%10
+        rev = rev*10+r
+        n = n//10
     return rev
-N = int(input())
-s = N*N
-r = rev(N)
-r=r*r
-sq=rev(r)
-if(s==sq):
+n = int(input())
+a = n*n
+b = reverse(n)
+x = b*b
+y = reverse(x)
+if a==y:
     print("True")
 else:
     print("False")
-        
