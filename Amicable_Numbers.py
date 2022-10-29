@@ -1,14 +1,12 @@
-n = int(input())
-m = int(input())
-sum = 0
-count = 0
-for I in range (1,n):
-    if n%I==0:
-        sum+=I
-for j in range (1,m):
-    if m%j==0:
-        count+=j
-if sum==m and count==n:
+def pof(num):
+    fs = 0
+    for i in range(1,num):
+        if num%i==0:
+            fs+=i
+    return fs
+a = int(input())
+b = int(input())
+if (pof(b)==a and pof(a)==b):
     print("Amicable")
 else:
     print("Not Amicable")
